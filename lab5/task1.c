@@ -11,6 +11,6 @@ int main() {
     int min = find_min(arr, len);
     remove_min(arr, &len, min);
     print_row(arr, len);
-
+    free(arr);
     return 0;
 }

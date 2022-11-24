@@ -13,6 +13,6 @@ int main() {
     printf("\n");
     remove_neg_columns(arr, rows, &cols);
     print_matrix(arr, rows, cols);
-
+    free_mass(arr,rows);
     return 0;
 }

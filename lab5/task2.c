@@ -16,6 +16,7 @@ int main() {
 
     printf("Result matrix:\n");
     print_2d_array(arr, rows);
+    free_td_array(arr, rows);
 
     return 0;
 }
