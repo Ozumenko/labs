@@ -6,7 +6,7 @@ int main() {
 
     input(&rows, 1, INT32_MAX, "Input rows:");
 
-    td_array *arr = (td_array *) (int **) malloc(rows * sizeof(td_array *));
+    td_array *arr = (td_array *) (int **) malloc(rows * sizeof(td_array ));
     fill_2d_array(arr, rows);
 
     printf("In matrix:\n");

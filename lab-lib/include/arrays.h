@@ -1,11 +1,18 @@
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include"array.c"
+
 
 #ifndef ARRAYS_H
 #define ARRAYS_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+typedef struct {
+    int character;
+    int *arr;
+} td_array;
+
 
 void print_bubble_matrix(int *arr);
 
@@ -38,4 +45,5 @@ void remove_odd_columns(td_array *arr, int rows);
 void free_td_array(td_array *arr, int rows);
 
 void free_mass(int **arr, int rows);
+
 #endif
