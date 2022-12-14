@@ -46,4 +46,15 @@ void free_td_array(td_array *arr, int rows);
 
 void free_mass(int **arr, int rows);
 
+void firsttask(char** line, char** line2);
+
+void secondtask(char** line1, char** line2);
+
+void del(char* line, int i, int step);
+void swap(char** line1, char** line2);
+void move(char** argv, int start, int end);
+void merge(int start, int mid, int end, char **argv);
+void merge_sort(char** argv,int start, int end);
+void type(int argc, char** argv);
+char **copy(int argc, char **argv);
 #endif
