@@ -210,8 +210,8 @@ void merge_sort(char **argv, int start, int end) {
     int mid;
     if (start < end) {
         mid = (start + end) / 2;
-        mergesort(argv, start, mid);
-        mergesort(argv, mid + 1, end);
+        merge_sort(argv, start, mid);
+        merge_sort(argv, mid + 1, end);
         merge(start, mid, end, argv);
     }
 }
@@ -357,3 +357,4 @@ char **copy(int argc, char **argv) {
     return str;
 
 }
+

@@ -2,7 +2,7 @@
 int main(int argc, char **argv) {
     if (argc == 1) {
         printf("no arg");
-
+ return argv;
     }
     char** str = copy (argc, argv);
     merge_sort(argv, 1, argc-1);

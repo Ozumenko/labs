@@ -46,15 +46,30 @@ void free_td_array(td_array *arr, int rows);
 
 void free_mass(int **arr, int rows);
 
-void firsttask(char** line, char** line2);
+void firsttask(char **line, char **line2);
 
-void secondtask(char** line1, char** line2);
+void secondtask(char **line1, char **line2);
 
-void del(char* line, int i, int step);
-void swap(char** line1, char** line2);
-void move(char** argv, int start, int end);
+void del(char *line, int i, int step);
+
+void swap(char **line1, char **line2);
+
+void move(char **argv, int start, int end);
+
 void merge(int start, int mid, int end, char **argv);
-void merge_sort(char** argv,int start, int end);
-void type(int argc, char** argv);
+
+void merge_sort(char **argv, int start, int end);
+
+void type(int argc, char **argv);
+
 char **copy(int argc, char **argv);
+
+void printout(int **arr, int n, int m);
+
+int findmax(int **arr, int n, int m);
+
+void swap_1(int **arr, int n, int m1, int m2);
+
+void ShellSort(int **arr, int n, int m);
+
 #endif
