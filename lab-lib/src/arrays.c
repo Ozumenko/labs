@@ -265,7 +265,7 @@ void del(char *line, int i, int step) {
     }
 }
 
-void firsttask(char **line, char **line2) {
+void first_task(char **line, char **line2) {
     int k, len = 1;
     printf("input k: ");
     while (scanf("%d", &k) != 1 || getchar() != '\n') {
@@ -303,7 +303,7 @@ void firsttask(char **line, char **line2) {
         printf("%c", line[0][i]);
 }
 
-void secondtask(char **line1, char **line2) {
+void second_task(char **line1, char **line2) {
     int len1 = 1, len2 = 1;
     printf("input string \n");
     *line1 = (char *) calloc(len1, sizeof(char));

@@ -11,11 +11,11 @@ int main() {
     char* line1, *line2;
     if (choice == 1) {
         printf("Delete words less than k letters\n");
-        fun = firsttask;
+        fun = first_task;
     }
     else {
         printf("The strings S and S0 are given. Remove the first substring matching S0 from the string S.\nIf there are no matching substrings, then output the string S unchanged\n");
-        fun = secondtask;
+        fun = second_task;
     }
     fun(&line1, &line2);
 }

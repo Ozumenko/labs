@@ -46,9 +46,9 @@ void free_td_array(td_array *arr, int rows);
 
 void free_mass(int **arr, int rows);
 
-void firsttask(char **line, char **line2);
+void first_task(char **line, char **line2);
 
-void secondtask(char **line1, char **line2);
+void second_task(char **line1, char **line2);
 
 void del(char *line, int i, int step);
 
