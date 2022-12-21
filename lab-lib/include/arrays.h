@@ -48,6 +48,8 @@ void free_mass(int **arr, int rows);
 
 void first_task(char **line, char **line2);
 
+void reverse(int *arr, int len);
+
 void second_task(char **line1, char **line2);
 
 void del(char *line, int i, int step);

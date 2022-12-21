@@ -1,7 +1,7 @@
 
 #ifndef SORT_H
 #define SORT_H
-
+void select_sort(int *arr, int len);
 void swap_2(int *xp, int *yp);
 
 void bubble_sort(int *arr, int n);

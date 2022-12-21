@@ -16,6 +16,14 @@ void free_td_array(td_array *arr, int rows) {
     }
 }
 
+void reverse(int *arr, int len) {
+    int temp;
+    for (int i = 0; i < len / 2; i++) {
+        temp = arr[i];
+        arr[i] = arr[len - i - 1];
+        arr[len - i - 1] = temp;
+    }
+}
 
 void input(int *var, int min, int max, char *str) {
 

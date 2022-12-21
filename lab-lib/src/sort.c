@@ -7,21 +7,37 @@ void swap_2(int *xp, int *yp) {
 
 
 }
+void select_sort(int *arr, int len) {
 
+    int min_i;
+
+    for (int i = 0; i < len - 1; i++) {
+
+        if (arr[i] >= 0 || !(arr[i] % 2)) continue;
+
+        min_i = i;
+        for (int j = i + 1; j < len; j++)
+            if (arr[j] < arr[min_i])
+                min_i = j;
+
+        if (min_i != i)
+            swap_2(&arr[min_i], &arr[i]);
+    }
+}
 
 void bubble_sort(int *arr, int len) {
 
     int k;
-    for (int i = 0; i < len - 1; i++) {
-        for (int j = 0; j < len - i - 1; j++) {
-            if (arr[j] >= 0 || !(arr[j] % 2))continue;
-            for (k = j + 1; k < len; k++) {
-                if (arr[k] <= 0 && arr[k] % 2)break;
-                if (arr[j] > arr[k])
-                    swap_2(&arr[j], &arr[k]);
-            }
-        }
 
+    for (int i = 0; i < len - 1; i++) {
+
+        for (int j = 0; j < len - i - 1; j++) {
+
+            if (arr[j] >= 0 || !(arr[j] % 2)) continue;
+            for (k = j + 1; k < len; k++) if (arr[k] <= 0 && arr[k] % 2) break;
+
+            if (arr[j] > arr[k]) swap_2(&arr[j], &arr[k]);
+        }
     }
 }
 
