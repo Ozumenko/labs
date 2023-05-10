@@ -195,7 +195,6 @@ char *file_read(char path[]) {
 
     fread(buffer, 1, length, f);
     fclose(f);
-
     return buffer;
 }
 
